@@ -13,7 +13,7 @@
 
 <body>
 <div class="main">
-  <div class="headerhome"><img src="img/head.png"></div>
+  <div class="headerhome"><a href="index.html"><img src="img/head.png"></a></div>
   <div class="perroHome"><a href="#"><img src="img/ent_perros.png"></a></div>
   <div class="ruedaperro1"><img src="img/rueda-perro-g.png"></div>
   <div id="nav1">
@@ -21,69 +21,82 @@
      <li><a href="#" class="muestracat1" ></a></li>
      <li><a href="#" class="muestracat2" ></a></li>
      <li><a href="#" class="muestracat3"></a></li>
-     <li><a href="#" class="muestracat4"></a></li>
-     <li><a href="#" class="muestracat5"></a></li>
-     <li><a href="#" class="muestracat6"></a></li>
-     <li><a href="#" class="muestracat7"></a></li>
+     <li><a href="perro/optifit/optifit-2.html" class="muestracat4"></a></li>
+     <li><a href="perro/optiderma/optiderma-2.html" class="muestracat5"></a></li>
+     <li><a href="perro/optifortis/optifortis-2.html" class="muestracat6"></a></li>
+     <li><a href="perro/optienrich/optienrich-2.html" class="muestracat7"></a></li>
   </ul>
   </div>
   <!--nav puppy-->
    <ul id="menu1" style="display:none">
-             <li><a href="#" class="menu1-1"></a></li>
-             <li><a href="#" class="menu1-2"></a></li>
-             <li><a href="#" class="menu1-3"></a></li>
+             <li><a href="perro/optistart/optistart-5.html" class="menu1-1"></a></li>
+             <li><a href="perro/optistart/optistart-7.html" class="menu1-2"></a></li>
+             <li><a href="perro/optistart/optistart-9.html" class="menu1-3"></a></li>
          </ul>
         
   <!--nav adult-->
   <ul id="menu2" style="display:none">
-             <li><a href="#" class="menu2-1"></a></li>
-             <li><a href="#" class="menu2-2"></a></li>
-             <li><a href="#" class="menu2-3"></a></li>
+             <li><a href="perro/optilife/optilife-5.html" class="menu2-1"></a></li>
+             <li><a href="perro/optilife/optilife-7.html" class="menu2-2"></a></li>
+             <li><a href="perro/optilife/optilife-9.html" class="menu2-3"></a></li>
          </ul>
   <!--nav 7+-->
   <ul id="menu3" style="display:none">
-             <li><a href="#" class="menu3-1"></a></li>
-             <li><a href="#" class="menu3-2"></a></li>
-             <li><a href="#" class="menu3-3"></a></li>
+             <li><a href="perro/optiage/optiage-5.html" class="menu3-1"></a></li>
+             <li><a href="perro/optiage/optiage-7.html" class="menu3-2"></a></li>
+             <li><a href="perro/optiage/optiage-9.html" class="menu3-3"></a></li>
          </ul>
 </div>
 <!---/main--> 
+
+<!--
+     <li><a href="perro/optistart/optistart-2.html"><img src="img/p-puppy.png"></a></li>
+     <li><a href="perro/optilife/optilife-2.html"><img src="img/p-adult.png"></a></li>
+     <li><a href="perro/optiage/optiage-2.html"><img src="img/p-7+.png"></a></li>
+     <li><a href="perro/optifit/optifit-2.html"><img src="img/p-reduced.png"></a></li>
+     <li><a href="perro/optiderma/optiderma-2.html"><img src="img/p-sensitive.png"></a></li>
+     <li><a href="perro/optifortis/optifortis-2.html"><img src="img/p-delicate.png"></a></li>
+     <li><a href="perro/optienrich/optienrich-2.html"><img src="img/p-exigent.png"></a></li>
+-->
+
 <script>
 $(".muestracat1").click(function(){
-  document.getElementById("menu1").style.display = "block";
-  document.getElementById("menu2").style.display = "none";
-  document.getElementById("menu3").style.display = "none";
+  $("#menu1").show();
+  $("#menu2").hide();
+  $("#menu3").hide();
  }); 
  $(".muestracat2").click(function(){
-  document.getElementById("menu1").style.display = "none";
-  document.getElementById("menu2").style.display = "block";
-  document.getElementById("menu3").style.display = "none";
+  $("#menu1").hide();
+  $("#menu2").show();
+  $("#menu3").hide();
  }); 
  $(".muestracat3").click(function(){
-  document.getElementById("menu1").style.display = "none";
-  document.getElementById("menu2").style.display = "none";
-  document.getElementById("menu3").style.display = "block";
+  $("#menu1").hide();
+  $("#menu2").hide();
+  $("#menu3").show();
  });
+ /*
  $(".muestracat4").click(function(){
-  document.getElementById("menu1").style.display = "none";
-  document.getElementById("menu2").style.display = "none";
-  document.getElementById("menu3").style.display = "none";
+  $("#menu1").hide();
+  $("#menu2").hide();
+  $("#menu3").hide();
  }); 
  $(".muestracat5").click(function(){
-  document.getElementById("menu1").style.display = "none";
-  document.getElementById("menu2").style.display = "none";
-  document.getElementById("menu3").style.display = "none";
+  $("#menu1").hide();
+  $("#menu2").hide();
+  $("#menu3").hide();
  }); 
  $(".muestracat6").click(function(){
-  document.getElementById("menu1").style.display = "none";
-  document.getElementById("menu2").style.display = "none";
-  document.getElementById("menu3").style.display = "none";
+  $("#menu1").hide();
+  $("#menu2").hide();
+  $("#menu3").hide();
  }); 
  $(".muestracat7").click(function(){
-  document.getElementById("menu1").style.display = "none";
-  document.getElementById("menu2").style.display = "none";
-  document.getElementById("menu3").style.display = "none";
- }); 
+  $("#menu1").hide();
+  $("#menu2").hide();
+  $("#menu3").hide();
+ });
+ */ 
 </script>
 </body>
 
